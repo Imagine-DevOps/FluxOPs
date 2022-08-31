@@ -30,3 +30,13 @@ There are some principles that you have to follow if you are using GitOps to aut
 ## GitOps, Cloud Native, and Edge Computing
 
 Application focus running low resources environments using ARM processors, in this case, Flux has support for ARM while Argo CD doesn’t. this focuses on implementing GitOps with Flux using ARM devices. 
+Our GitOps workflow implementation has the next steps:
+
+A developer changes the application and submits the changes with a pull request to be merged into the main branch. You can do it could make changes and push them directly to the main branch, but it is not good practice since you may have submitted broken or unreviewed changes. In later examples of this chapter this case we are using GitHub to host our git repository.
+The repository has activated GitHub Actions and triggered a small pipeline just to build the image.
+The image is built in the pipeline and tagged with a new version, then is pushed to the public Docker registry. In most business scenarios, you have to use private repositories in the cloud or on premise.
+The Image Updater feature checks for new changes and tags for the previously newly generated images that your application is going to use.
+Once Flux detects the new image, it looks for the files configured to be updated with the new image tag. Once Flux updates the files definitions with the new tag, the changes are pushed to the repository.
+Flux detects the changes in the definition of the files which were updated with the new image tag. Then Flux triggers a reconciliation process to update your applications.
+The objects in the Kubernetes cluster associated to the definition files are updated. Then your application will run with the new image.
+
