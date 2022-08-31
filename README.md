@@ -12,7 +12,7 @@ A way of implementing Continuous Deployment for Imagine Cloud native application
 -   **CI/CD**: Continuous Integration and Continuous Delivery includes by nature, all the process of building, checking, and deploying applications and changes to those software applications. GitOps is used to automate the continuous deployment for a cloud native application.
 
 
-GitOps outlined processes as depicted in the diagram:
+GitOps outlined processes:
 
 -   **Commit code to the source**: First, Here a developer makes changes and pushes their changes to a source or repository, for example, a git repository hosted at GitHub.
 -   **Sync changes**: A GitOps tool, like for example Flux, periodically detects changes in the source.
