@@ -3,7 +3,7 @@ GitOps with Flux - A developer-centric CD experience
 
 Flux Edge computing
 
-A way of implementing Continuous Deployment for Imagine Cloud native applications. It focuses on a developer-centric experience when operating infrastructure, by using tools developers are already familiar with, including Git and Continuous Deployment tools_, this means that GitOps helps you with your continuous deployment in general.
+A way of implementing Continuous Deployment for Imagine Cloud native applications. It focuses on a developer-centric experience when operating infrastructure, by using tools developers are already familiar with, including Git and Continuous Deployment tools.
 
 
 
