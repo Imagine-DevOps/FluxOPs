@@ -1,6 +1,5 @@
 # FluxOps
-GitOps with Flux
-
+GitOps with Flux - A developer-centric experienc
 
 Flux Edge computing
 
