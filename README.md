@@ -1,5 +1,5 @@
 # Imagine FluxOps
-GitOps with Flux - A developer-centric experience
+GitOps with Flux - A developer-centric CD experience
 
 Flux Edge computing
 
