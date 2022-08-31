@@ -1,4 +1,4 @@
-# Imagine FluxOps
+# Imagine FluxOPs
 GitOps with Flux - A developer-centric continuous deployment experience
 
 Flux Edge computing
